@@ -15,7 +15,7 @@ npm i --save @types/express
 npm i --save-dev nodemon
 npm i --save-dev @types/cors
 npm install dotenv --save
-
+npm i jest ts-jest @types/jest -D
 ```
 ## tsconfig.json
 
