@@ -16,6 +16,8 @@ npm i --save-dev nodemon
 npm i --save-dev @types/cors
 npm install dotenv --save
 npm i jest ts-jest @types/jest -D
+npx ts-jest config:init
+npx jest --init
 ```
 ## tsconfig.json
 
@@ -39,6 +41,17 @@ Create **tsconfig.json** in the root directory that will contain your typescript
   }
 }
 ```
+``` JEST
+/* eslint-disable no-undef */
+/** @type {import('ts-jest').JestConfigWithTsJest} */
+
+module.exports = {
+  preset: 'ts-jest',
+  testEnvironment: 'node',
+};
+
+```
+
 ## package.json
 
 Add **dev** and **build** scripts to your **package.json** file, 
@@ -56,6 +69,8 @@ Add **dev** and **build** scripts to your **package.json** file,
 
 
 ```
+npx jest
+
 npm run dev
 ```
 OR
