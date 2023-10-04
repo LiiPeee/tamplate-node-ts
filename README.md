@@ -10,6 +10,10 @@ Tamplate commands to init a NodeJS TypeScript project
 ```
 npm init -y
 npm i express cors
+npm install -D typescript
+npm install -D ts-node
+tsc --init // inicializar o Typescript no projeto
+npm install typescript ts-node --save-dev // utilizar dessa forma para instalar o TS e o ts-node juntos
 npm i -g --save-dev @types/node
 npm i --save @types/express
 npm i --save-dev nodemon
@@ -18,6 +22,8 @@ npm install dotenv --save
 npm i jest ts-jest @types/jest -D
 npx ts-jest config:init
 npx jest --init
+npx prisma generate 'precisa especificar o caminho'
+npx prisma migrate dev --name inicializando --schema ./prisma/seu-projeto 'migra tudo que foi construido para o DB'
 ```
 ## tsconfig.json
 
